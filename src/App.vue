@@ -1,6 +1,10 @@
 <script>
-//import xxx from './components/xxx.vue'
+import AppHeader from './components/AppHeader.vue'
 export default {
+  components: {
+    AppHeader
+  },
+
   data() {
     return {
       devAnswer: "Yes"
@@ -23,6 +27,8 @@ export default {
 
   <h1>Funziona?</h1>
   <h2>{{ devAnswer }}</h2>
+  <AppHeader/>
+  
   
 </template>
 

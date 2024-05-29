@@ -1,8 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
+
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppMain,
+    AppFooter
   },
 
   data() {
@@ -25,11 +30,10 @@ export default {
 
 <template>
 
-  <h1>Funziona?</h1>
-  <h2>{{ devAnswer }}</h2>
   <AppHeader/>
-  
-  
+  <AppMain/>
+  <AppFooter/>
+
 </template>
 
 

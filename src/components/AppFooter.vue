@@ -1,5 +1,15 @@
 <script>
+import FooterTop from './FooterTop.vue'
+import FooterMiddle from './FooterMiddle.vue'
+import FooterBottom from './FooterTop.vue'
+
 export default {
+    components: {
+        FooterTop,
+        FooterMiddle,
+        FooterBottom
+    },
+
     data() {
         return {
             devAnswer: "AppFooter"
@@ -19,7 +29,12 @@ export default {
 
 
 <template>
-    <div id="vFooter">{{ devAnswer }}</div>
+    <div id="vFooter">
+        {{ devAnswer }}
+        <FooterTop/>
+        <FooterMiddle/>
+        <FooterBottom/>
+        </div>
 </template>
 
 
